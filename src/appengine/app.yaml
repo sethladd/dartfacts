@@ -1,4 +1,4 @@
-application: dart-facts
+application: dartfacts
 version: CHANGEME
 # NOTE: URL is CHANGEME.dart-lang.appspot.com
 #       To get your own staging server, change 'CHANGEME' to something
