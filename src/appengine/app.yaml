@@ -1,0 +1,48 @@
+application: dart-facts
+version: CHANGEME
+# NOTE: URL is CHANGEME.dart-lang.appspot.com
+#       To get your own staging server, change 'CHANGEME' to something
+#       like 'kathyw' or 'kathyw-dartium'.
+#
+#       To deploy to dartlang.org (only from a clean master workspace)
+#       change CHANGEME to a date string: YYYY-MM-DD.
+#       For more information on making changes, see goto/dartsiteupdate.
+#
+# IMPORTANT: AFTER changing the version, DO THIS:
+#       make clean
+#       make build
+
+runtime: python27
+api_version: 1
+threadsafe: true
+
+#default_expiration: "1d"
+
+handlers:
+
+- url: /(.*\.png)
+  static_files: static/\1
+  expiration: 1d
+  upload: static/(.*\.png)
+
+- url: /(.*\.ico)
+  static_files: static/\1
+  expiration: 7d
+  upload: static/(.*\.ico)
+
+- url: /(.*\.jpg)
+  static_files: static/\1
+  expiration: 1d
+  upload: static/(.*\.jpg)
+
+- url: /(.*\.woff)
+  static_files: static/\1
+  expiration: 7d
+  upload: static/(.*\.woff)
+
+- url: (.*)/
+  static_files: static\1/index.html
+  upload: static/index.html
+
+- url: /
+  static_dir: static

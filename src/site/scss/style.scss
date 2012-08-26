@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+/* Override bootstrap variables */
+$sansFontFamily: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseFontSize: 14px !default;
+$baseLineHeight: 22px !default;
+
+$dartFont: 'Montserrat', sans-serif;
+
+@import "compass_twitter_bootstrap_awesome";
+
+/* colors from logo */
+$blue-dark: #0081C6;
+$blue-light: #00A4E4;
+$green-dark: #00D2B8;
+$green-light: #55DDCA;
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* place after the body + padding */
+@import "compass_twitter_bootstrap_responsive";
+
+@import "syntax";
