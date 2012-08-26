@@ -1,25 +1,9 @@
 safe: false
 auto: true
 server: true
-server_port: 8080
+server_port: 8081
 source: .
 destination: ../../build/static
 markdown: kramdown
 pygments: true
 permalink: /news/:year/:month/:day/:title.html
-custom:
-  downloads:
-    editor-url-prefix: "https://gsdview.appspot.com/dart-editor-archive"
-    binaries:
-      - os: win32
-        name: Windows
-        ext: zip
-        editor-ext: zip
-      - os: macos
-        name: Mac
-        ext: zip
-        editor-ext: zip
-      - os: linux
-        name: Linux
-        ext: tar.gz
-        editor-ext: zip

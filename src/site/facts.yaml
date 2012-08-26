@@ -16,11 +16,11 @@ Objects are defined with classes:
   types:
     - lang
 
-Variables marked with final cannot change their value:
-  desc: A final variable cannot change its value, once it is set.
-        It is a compile-time error if something attempts to change it.
+Variables marked with `final` cannot change their value:
+  desc: "A `final` variable cannot change its value, once it is set.
+        It is a compile-time error if something attempts to change it."
   types:
-  	- lang
+    - lang
 
 Install 3rd party packages with Pub:
   desc: Dart ships with a package manager called pub. It can

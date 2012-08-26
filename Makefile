@@ -19,7 +19,7 @@ deploy: build
 	echo "Visit http://$(CURRENT_BRANCH).dart-lang.appspot.com"
 
 server:
-	@open http://localhost:8080/ && cd ./src/site && jekyll && cd ../..
+	@open http://localhost:8081/ && cd ./src/site && jekyll && cd ../..
 
 optimize:
 	@find . -iname *.png | xargs -L 1 optipng -o7
