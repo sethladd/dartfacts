@@ -2,17 +2,17 @@
 layout: default
 ---
 
-{% injectdata facts facts.yaml %}
-
 <div class="hero-unit">
   <h1>Dart Facts</h1>
-  <p>No opinion, just facts, about the new structured web programming project.</p>
+  <p>No opinion, just the facts, about the new structured web programming project.</p>
 </div>
 
-{% for fact in page.facts %}
-<section markdown="1">
-## {{ fact[0] }}
-
-{{ fact[1].desc }}
-</section>
+<ul>
+{% for fact in site.pages %}
+  {% if fact.url contains '/facts' %}
+    <li>
+    <a href="{{ fact.url }}">{{ fact.title }}</a>
+    </li>
+  {% endif %}
 {% endfor %}
+</ul>
