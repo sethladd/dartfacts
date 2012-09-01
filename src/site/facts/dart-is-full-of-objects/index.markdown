@@ -1,6 +1,6 @@
 ---
 layout: fact
-title: Everything is an object in Dart
+title: Dart is full of objects
 ---
 # {{ page.title }}
 
