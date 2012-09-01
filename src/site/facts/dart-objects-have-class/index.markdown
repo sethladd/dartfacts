@@ -1,8 +1,11 @@
 ---
-layout: default
+layout: fact
 title: Dart objects have class
 see-also:
   - dart-classes-have-single-inheritance
+learn-more:
+  - title: Classes from Dart Language Tour
+    url: http://www.dartlang.org/language-tour/#classes
 ---
 # {{ page.title }}
 
@@ -10,6 +13,8 @@ Dart is a class-based object oriented language. An object's
 state (variables and their values) and behavior (methods)
 are defined by its class (and its class's
 parent class, up to the Object class).
+
+<section class="example" markdown="1">
 
 ## Example
 
@@ -30,8 +35,8 @@ class Point {
 }
 {% endhighlight %}
 
+</section>
+
 In the above example, notice the `this.x` in the
 constructor. This syntactic sugar eliminates the tedious
 pattern `this.x = x` that most constructors share.
-
-{% include see-also.html %}

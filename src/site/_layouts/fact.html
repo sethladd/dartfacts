@@ -1,0 +1,37 @@
+{% include header.html %}
+
+{{ content }}
+
+{% if page.see-also %}
+<section id="see-also">
+
+  <h2>See Also</h2>
+
+  <ul>
+  {% for seealso in page.see-also %}
+    {% for fact in site.pages %}
+      {% if fact.url contains seealso %}
+        <li><a href="{{ fact.url }}">{{ fact.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+
+</section>
+{% endif %}
+
+{% if page.learn-more %}
+<section id="learn-more">
+
+  <h2>Learn More</h2>
+
+  <ul>
+  {% for learnmore in page.learn-more %}
+    <li><a href="{{ learnmore.url }}">{{ learnmore.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+</section>
+{% endif %}
+
+{% include footer.html %}
