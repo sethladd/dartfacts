@@ -14,8 +14,6 @@ state (variables and their values) and behavior (methods)
 are defined by its class (and its class's
 parent class, up to the Object class).
 
-<section class="example" markdown="1">
-
 ## Example
 
 A Dart class looks familiar, but has a few enhancements.
@@ -34,8 +32,6 @@ class Point {
   }
 }
 {% endhighlight %}
-
-</section>
 
 In the above example, notice the `this.x` in the
 constructor. This syntactic sugar eliminates the tedious
