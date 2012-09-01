@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: fact
 title: Dart is dynamic with noSuchMethod
 ---
 # {{ page.title }}

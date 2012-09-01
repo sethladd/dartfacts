@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: fact
 title: Dart classes have single inheritance
 see-also:
   - dart-objects-have-class

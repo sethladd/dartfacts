@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: fact
 title: Dart is open source
 ---
 # {{ page.title }}
