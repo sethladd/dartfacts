@@ -13,7 +13,7 @@ of a class.
 
 ## Example
 
-In the following example, `Cat` is a more specialized verion
+In the following example, `Cat` is a more specialized version
 of `Animal`. That is, the concept of an animal is more abstract
 than the concept of a cat.
 
