@@ -6,16 +6,17 @@ see-also:
 ---
 # {{ page.title }}
 
-Dart is a single inheritance language. This means that
-a class can _extend_, or _inherit_ from, at most one other class.
-Inheritance is great for creating more specialized versions
-of a class.
+Dart is a single inheritance language. A class can _extend_, or _inherit from_,
+at most one other class. Inheritance is great for expressing an "is-a"
+relationship between two classes.
+
+Use inheritance to create more specialized classes. Avoid inheritance simply as
+a means to share code (instead, use encapsulation or mixins).
 
 ## Example
 
-In the following example, `Cat` is a more specialized version
-of `Animal`. That is, the concept of an animal is more abstract
-than the concept of a cat.
+In the following example, `Cat` is a more specialized concept
+of `Animal`.
 
 {% highlight dart %}
 class Animal {
@@ -23,7 +24,7 @@ class Animal {
   eat(num food) {
     health += food;
   }
-  makeNoise(); // abstract
+  makeNoise(); // Undefined (abstract)
 }
 
 class Cat extends Animal {
@@ -33,8 +34,8 @@ class Cat extends Animal {
 }
 {% endhighlight %}
 
-The `Animal` class is the _super class_ of `Cat`, while the
-`Cat` class is a sub-class of `Animal`.
+The `Animal` class is the _super-class_ of `Cat`, while the
+`Cat` class is a _sub-class_ of `Animal`.
 
 There can be many classes in the hierarchy. For example:
 
@@ -71,5 +72,3 @@ main() {
 }
 
 {% endhighlight %}
-
-{% include see-also.html %}

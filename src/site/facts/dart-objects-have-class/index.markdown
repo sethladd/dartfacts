@@ -10,9 +10,9 @@ learn-more:
 # {{ page.title }}
 
 Dart is a class-based object oriented language. An object's
-state (variables and their values) and behavior (methods)
+_state_ (variables and their values) and _behavior_ (methods)
 are defined by its class (and its class's
-parent class, up to the Object class).
+parent class, up to the root Object class).
 
 ## Example
 
@@ -23,8 +23,13 @@ Can you spot one below?
 #import('dart:math');
 
 class Point {
+  // The state of the object is defined by fields.
   num x, y;
+  
+  // The constructor creates a new instance of a class.
   Point(this.x, this.y);
+
+  // The behavior of the object is defined by methods.
   num distanceTo(Point other) {
     var dx = x - other.x;
     var dy = y - other.y;

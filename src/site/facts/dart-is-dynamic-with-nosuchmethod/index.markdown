@@ -20,6 +20,7 @@ requests for artbitrary JSON data.
 class JsonObject {
   final Map data;
 
+  // A named constructor with an initializer list.
   JsonObject.fromString(String json) : data = JSON.parse(json);
 
   noSuchMethod(String name, List params) {
@@ -32,7 +33,7 @@ class JsonObject {
 }
 
 main() {
-  var json = '{"firstName":"Bob","lastName":"Smith"}';
+  var json = '{"firstName":"Bob", "lastName":"Smith"}';
   var person = new JsonObject.fromString(json);
   print(person.firstName);
   person.lastName = 'Jones';

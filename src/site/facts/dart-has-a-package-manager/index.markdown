@@ -8,8 +8,8 @@ learn-more:
 # {{ page.title }}
 
 Dart bundles a package manager, affectionately called _pub_, with the Dart SDK.
-You can use pub to install and upgrade packages, containing Dart libraries and
-code.
+You can use pub to install and upgrade _packages_, which contain Dart libraries
+and code.
 
 Soon, you'll be able to search for and discover packages, as well as publish
 your own packages.
@@ -17,8 +17,7 @@ your own packages.
 ## Example
 
 To use pub, first create a `pubspec.yaml` file for your application. Declare
-the name of your application, and any dependencies. Notice how there are
-currently two ways to get packages: from the SDK or from git.
+the name of your application, and any dependencies.
 
 {% highlight yaml %}
 name: my-app
@@ -28,6 +27,9 @@ dependencies:
   example-mock:
     git: git://example.com/example-mock.git
 {% endhighlight %}
+
+Notice how there are
+currently two ways to get packages: from the Dart SDK or from git.
 
 Next, install the packages for your application.
 

@@ -12,13 +12,13 @@ learn-more:
 One of Dart's core design tenets is "compiles to logical and performant
 JavaScript". As the lingua franca of the web, JavaScript is an important
 deployment target for Dart. Dart's goal is to run across all major modern
-browsers that support ES5 and HTML5.
+browsers that support ECMAScript5 and HTML5.
 
-The dart2js compiler, the third generation compiler produced by the Dart
-team, is itself written in Dart. This compiler produces significantly
-smaller output than the first generation compiler. A technique called
-"tree shaking" is used to analyze the source code and imported libraries,
-and trim unused code from the output.
+The _dart2js compiler_, the third generation compiler-to-JavaScript produced by
+the Dart team, is itself written in Dart. This compiler produces significantly
+smaller output than the first generation compiler. A technique called "tree
+shaking" is used to analyze the source code and imported libraries, and trim
+unused code from the output.
 
 A minification step will be added for dart2js, to produce even smaller output.
 

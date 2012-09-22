@@ -10,11 +10,12 @@ learn-more:
 Dart allows you to unlock the performance of modern multi-core machines with
 Isolates, an abstraction for concurrency and partitioning in Dart.
 
-All Dart code runs inside an isolate. Isolates can run in separate threads or processes, or even in Web workers for HTML5 apps.
+All Dart code runs inside an isolate. Isolates can run in separate threads or
+processes, or even in Web workers for HTML5 apps.
 
-No mutable memory or state is concurrently accessible between isolates, thus
+Isolates do not share memory or state, thus
 reducing common bugs with traditional shared-state multi-threaded concurrency.
-Instead, isolates communicate via message passing over ports. Messages are
+Isolates communicate via message passing over ports. Messages are
 copied before received, thus ensuring no state is shared.
 
 # Example

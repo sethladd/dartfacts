@@ -5,7 +5,8 @@ title: Dart has string interpolation
 # {{ page.title }}
 
 You can construct a string in Dart with string interpolation. Insert a variable
-with `$name`, or insert the result of an expression with `${expression}`.
+into a string with `$name`, or insert the result of an expression into a string
+with `${expression}`.
 
 ## Example
 

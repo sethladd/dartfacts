@@ -6,12 +6,11 @@ see-also:
 ---
 # {{ page.title }}
 
-The Dart language is lexically scoped. This means that the scope of names is
-defined by where they occur in the source code. Lexical scope is statically
+The Dart language is lexically scoped. This means that the scope of a name is
+defined by where it occurs in the source code. Lexical scope is statically
 defined by the code, and thus easy to reason about and visually confirm.
 
-Among other things, this means that closures are lexically scoped, behaving
-in a more logical manner.
+Among other things, this means that closures are lexically scoped.
 
 ## Example
 

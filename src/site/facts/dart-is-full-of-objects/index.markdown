@@ -5,8 +5,8 @@ title: Dart is full of objects
 # {{ page.title }}
 
 Dart is an object-oriented language, and everything in Dart is an object. Even
-functions and numbers are true objects. Dart does not have primitives, nor does
-it have value types.
+functions, numbers, booleans, and null are true objects. Dart does not have
+primitives, nor does it have value types.
 
 Unless initialized with a value, Dart objects are initialized to `null`.
 
@@ -24,6 +24,10 @@ main() {
   var age;
   assert(age == null);
   assert(age is Object);
+
+  assert(null is Object);
+
+  assert(true is Object);
 
   var p = new Point();
   assert(p is Object);
