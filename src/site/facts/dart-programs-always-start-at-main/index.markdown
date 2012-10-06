@@ -5,7 +5,7 @@ title: Dart programs always start with main
 # {{ page.title }}
 
 Dart programs are structured, and begin their execution in the `main()`
-function. The parsing, compiling, and initializing steps do not execute
+function. The parsing and compiling steps do not execute
 Dart code. You can be sure that code does not execute until `main()` is run.
 
 ## Example

@@ -9,6 +9,9 @@ You can use the special operator methods in a class, and redefine how
 
 ## Example
 
+The `Money` class has implemented the `+` operator to return a new instance
+with the combined amounts.
+
 {% highlight dart %}
 class Money {
   final int amount;
